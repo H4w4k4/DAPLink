@@ -102,7 +102,7 @@ module:
         - records/hic_hal/stm32f103xb.yaml
         - records/usb/usb-hid.yaml
     hic_stm32l412xx: &module_hic_stm32l412xx
-        - records/rtos/rtos-cm3.yaml
+        - records/rtos/rtos-cm4.yaml
         - records/hic_hal/stm32l412xx.yaml
         - records/usb/usb-hid.yaml
 
@@ -206,6 +206,11 @@ projects:
     stm32f103xb_if:
         - *module_if
         - *module_hic_stm32f103xb
+        - records/family/all_family.yaml
+        - records/usb/usb-bulk.yaml
+    stm32l412xx_if:
+        - *module_if
+        - *module_hic_stm32l412xx
         - records/family/all_family.yaml
         - records/usb/usb-bulk.yaml
 
